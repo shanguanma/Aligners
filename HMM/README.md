@@ -1,1 +1,1 @@
-# forward-backward of HMM
+# forward-backward algorithm of HMM
