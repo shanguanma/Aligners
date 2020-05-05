@@ -1,1 +1,1 @@
-# forward-backward of CTC
+# forward-backward algorithm of CTC
