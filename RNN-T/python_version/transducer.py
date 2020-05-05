@@ -48,10 +48,13 @@ def forward_pass(log_probs, labels, blank):
         alphas[0, u] = alphas[0, u-1] + log_probs[0, u-1, labels[u-1]]
     for t in range(1, T):
         for u in range(1, U):
+            # latex format
+            #  $\alpha$(t,u) =  $\alpha$(t-1,u) $\phi$(t-1,u)+$\alpha$(t,u-1) y(t,u-1) 
             no_emit = alphas[t-1, u] + log_probs[t-1, u, blank]
             emit = alphas[t, u-1] + log_probs[t, u-1, labels[u-1]]
             alphas[t, u] = logsumexp(emit, no_emit)
-
+    # The total output sequence probability is equal to the forward variable at the terminal node
+    # P\textsubscript{r}( \bm {$y|x$})=$\alpha$(T,U)$\phi$(T,U)
     loglike = alphas[T-1, U-1] + log_probs[T-1, U-1, blank]
     return alphas, loglike
 
