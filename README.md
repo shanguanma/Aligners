@@ -1,5 +1,6 @@
 # aligners
- it contains HMM, CTC, RNN-T(rnn-tranducer).
+ It contains HMM, CTC, RNN-T(rnn-tranducer).
+ 
  Their specific algorithm implementation uses forward-backward algorithm, but the specific details are different.
 
 
