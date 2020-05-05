@@ -46,6 +46,7 @@ def forward_pass(log_probs, labels, blank):
 
     for u in range(1, U):
         alphas[0, u] = alphas[0, u-1] + log_probs[0, u-1, labels[u-1]]
+      
     for t in range(1, T):
         for u in range(1, U):
             # latex format
