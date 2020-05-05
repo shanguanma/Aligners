@@ -73,6 +73,7 @@ def backward_pass(log_probs, labels, blank):
 
     for t in reversed(range(T-1)):
         for u in reversed(range(U-1)):
+            # $\beta$(t,u) = $\beta$(t+1,u)$\phi$(t,u) + $\beta$(t,u+1)y(t,u)
             no_emit = betas[t+1, u] + log_probs[t, u, blank]
             emit = betas[t, u+1] + log_probs[t, u, labels[u]]
             betas[t, u] = logsumexp(emit, no_emit)
