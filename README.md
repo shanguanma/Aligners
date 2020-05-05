@@ -12,6 +12,8 @@
   - [Graves 2012](https://arxiv.org/abs/1211.3711)
   - [Graves 2013](https://arxiv.org/abs/1303.5778)
 # Reference code:
-- [Awni Hannun] (https://github.com/awni/transducer)
-- [Ivan Sorokin] (https://github.com/1ytic/warp-rnnt)
-- [Katarina Elez] (https://github.com/katarinaelez/bioinformatics-algorithms)
+- RNN-T
+  - [Awni Hannun] (https://github.com/awni/transducer)
+  - [Ivan Sorokin] (https://github.com/1ytic/warp-rnnt)
+- HMM
+  - [Katarina Elez] (https://github.com/katarinaelez/bioinformatics-algorithms)
