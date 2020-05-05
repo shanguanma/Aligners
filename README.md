@@ -9,8 +9,8 @@
 
 # Reference paper
 - RNN-T
-  - "Sequence Transduction with Recurrent Neural Networks" [Graves 2012](https://arxiv.org/abs/1211.3711)
-  - [Graves 2013](https://arxiv.org/abs/1303.5778)
+  - Sequence Transduction with Recurrent Neural Networks, [Graves 2012](https://arxiv.org/abs/1211.3711)
+  - Speech Recognition with Deep Recurrent Neural Networks, [Graves 2013](https://arxiv.org/abs/1303.5778)
 # Reference code:
 - RNN-T
   - [Awni Hannun] (https://github.com/awni/transducer)
