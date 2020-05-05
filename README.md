@@ -9,7 +9,7 @@
 
 # Reference paper
 - RNN-T
-  - [Graves 2012](https://arxiv.org/abs/1211.3711)
+  - "Sequence Transduction with Recurrent Neural Networks" [Graves 2012](https://arxiv.org/abs/1211.3711)
   - [Graves 2013](https://arxiv.org/abs/1303.5778)
 # Reference code:
 - RNN-T
