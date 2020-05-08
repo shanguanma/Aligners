@@ -1,3 +1,4 @@
+#!/urs/bin/env python3
 """
 Python reference implementation of the
 sequence transducer.
